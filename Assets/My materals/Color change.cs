@@ -14,7 +14,7 @@ public class ColorChange : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Domino") || collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Domino") || collision.gameObject.CompareTag("Color"))
         {
             int rand = Random.Range(0, colors.Length);
             myRenderer.material = colors[rand];
